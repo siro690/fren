@@ -1,0 +1,19 @@
+def calculate_planet_square(planet_name, planet_radius):
+    """
+    Calculates the square of a planet given its name and radius.
+    
+    Parameters:
+    planet_name (str): The name of the planet.
+    planet_radius (float): The radius of the planet in kilometers.
+    
+    Returns:
+    float: The square of the planet in square kilometers.
+    """
+    planet_square = 4 * 3.14159 * (planet_radius ** 2)
+    return planet_square
+
+# Example usage
+planet_name = "Earth"
+planet_radius = 6371  # in kilometers
+earth_square = calculate_planet_square(planet_name, planet_radius)
+print(f"The square of {planet_name} is {earth_square:.2f} square kilometers.")
